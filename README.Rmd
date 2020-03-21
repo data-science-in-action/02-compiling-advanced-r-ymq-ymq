@@ -1,0 +1,31 @@
+---
+title: "Second Homework"
+author: "ymq-ymq"
+date: "2020/3/21"
+output: pdf_document
+---
+
+## Error in cat(paste0(contributors$desc, collapse = ", "))
+The full command is: `contributors <- read.csv("contributors.csv", stringsAsFactors = FALSE,encoding = "UTF-8")`
+The code, `encoding="UTF-8"`, is new adding.
+
+## Error in loadNamespace(name) : 'emo'
+First, download *Rtools* to the computer;
+Second, select "Add Rtools to system PATH";
+Third, input the command in git:`git config --global http.sslBackend "openssl"`,
+`git config --global http.sslCAInfo "D:\git\mingw64\ssl\cert.pem"`;
+Fourth, install the package *usethis*,*devtools*, and then input the command: `library(usethis)`, `library(devtools)`, `devtools::install_github("hadley/sloop")`,`devtools::install_github("hadley/emo")`.
+
+## Error in library() or Error in loadNamespace(name) 
+This is missing packages. We can Using `install.packages()` to solve it. The packages I installed are *dplyr*,*sessioninfo*,*lobstr*, *devtools*, *sloop*,*RSQLite*,*zeallot*,*profvis*,*bench*,*ggbeeswarm*.
+
+## Warning message: In system2(..., stdout = if (use_file_stdout()) f1 else FALSE, stderr = f2) : '"xelatex"' not found.
+Download *MiKTex*,add it to the system path,then update the software at *MikTex Console*
+
+## latex fail to compile...
+using `install.packages(tinytex)` ,`tinytex::install_tinytex()`to solve it.
+and add “C:/Windows/system32” to the system path.
+
+## Package fontspec Error: The font "Inconsolata" and "Andale Mono" cannot be found.
+Download the *Inconsolata* font and *Andale Mono* font, and place them in the C: \ Windows \ Fonts.
+
